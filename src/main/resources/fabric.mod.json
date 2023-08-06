@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "nomoreportals",
+  "version": "${version}",
+  "name": "NoMorePortals",
+  "description": "Disables creating different portals",
+  "authors": [
+    "MrNightFury"
+  ],
+  "contact": {
+    "repo": "https://github.com/MrCre/untitled"
+  },
+  "license": "MIT",
+  "icon": "assets/nomoreportals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      "ru.mrnightfury.nomoreportals.NoMorePortalsServer"
+    ],
+    "main": [
+      "ru.mrnightfury.nomoreportals.NoMorePortals"
+    ]
+  },
+  "mixins": [
+    "nomoreportals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
