@@ -16,7 +16,7 @@ public class ModMenuLoader implements ModMenuApi {
 			config = ConfigManager.getConfig();
 			ConfigBuilder builder = ConfigBuilder.create()
 					.setParentScreen(parent)
-					.setTitle(Text.translatable("ru.mrnightfury.configScreenTitle"))
+					.setTitle(Text.translatable("nomoreportals:config.title"))
 					.setSavingRunnable(() -> {
 						ConfigManager.setConfig(config);
 						ConfigManager.save();
