@@ -15,10 +15,12 @@
   "environment": "*",
   "entrypoints": {
     "server": [
-      "ru.mrnightfury.nomoreportals.NoMorePortalsServer"
     ],
     "main": [
       "ru.mrnightfury.nomoreportals.NoMorePortals"
+    ],
+    "modmenu": [
+      "ru.mrnightfury.nomoreportals.ModMenuLoader"
     ]
   },
   "mixins": [

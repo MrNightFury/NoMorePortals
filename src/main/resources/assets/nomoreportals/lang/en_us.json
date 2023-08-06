@@ -1,0 +1,13 @@
+{
+  "nomoreportals:cantCreatePortal.nether": "§cSorry, you can't create §4nether §cportal :(",
+  "nomoreportals:cantCreatePortal.end": "§dSorry, you can't create §5end §dportal :(",
+  "nomoreportals:cantCreatePortal.edenRing": "§eSorry, you can't create §6Eden Ring §eportal :(",
+
+  "nomoreportals:cantTeleport": "You cant teleport to %s",
+
+  "nomoreportals:config.title": "NoMorePortals Config",
+  "nomoreportals:config.allowPortal.nether": "Allow Nether portal",
+  "nomoreportals:config.allowPortal.end": "Allow End portal",
+  "nomoreportals:config.allowPortal.edenRing": "Allow Eden Ring portal",
+  "nomoreportals:config.forbiddenDimensions": "Forbidden Dimensions"
+}

@@ -14,6 +14,7 @@ repositories {
     // for more information about repositories.
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.terraformersmc.com/releases/" }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -25,13 +26,16 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modApi ("me.shedaniel.cloth:cloth-config-fabric:8.3.103") {
+    modCompileOnly ("me.shedaniel.cloth:cloth-config-fabric:8.3.103") {
         transitive = false
     }
-    modApi ("com.terraformersmc:modmenu:4.2.0-beta.2") {
+    modRuntimeOnly("me.shedaniel.cloth:cloth-config-fabric:8.3.103")
+    modCompileOnly ("com.terraformersmc:modmenu:4.2.0-beta.2") {
         transitive = false
     }
+    modRuntimeOnly("com.terraformersmc:modmenu:4.2.0-beta.2")
 
+    modCompileOnly files("run/mods/bclib-2.1.7.jar")
     modCompileOnly files("run/mods/eden-ring-0.6.4.jar")
 }
 
@@ -46,6 +50,10 @@ processResources {
                 "minecraft_version": project.minecraft_version,
                 "loader_version": project.loader_version
     }
+}
+
+configurations {
+    modRuntimeOnly.exclude group: 'net.fabricmc', module: 'fabric-loader'
 }
 
 def targetJavaVersion = 17

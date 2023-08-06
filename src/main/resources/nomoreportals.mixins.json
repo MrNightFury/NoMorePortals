@@ -5,12 +5,13 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "AreaHelperMixin",
-    "PortalForcerMixin"
+    "EdenPortalMixin",
+    "EnderEyeItemMixin",
+    "ServerPlayerEntityMixin"
   ],
   "client": [
   ],
   "server": [
-
   ],
   "injectors": {
     "defaultRequire": 1
